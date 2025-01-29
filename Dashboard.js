@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const token = sessionStorage.getItem("token");
 
   if (token === null) {
-    //window.location.href = "index.html";
+    window.location.href = "index.html";
   } else {
     const name = document.getElementById("name");
     const userId = sessionStorage.getItem("userId");
