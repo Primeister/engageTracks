@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Dashboard.css">
+    
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="main">
+
+            <div class="left-main">
+                <div class="company-logo">
+                    <img src="assets/logo.png" alt="">
+                </div><br/>
+                
+                
+                <a onclick="showAccMenu()">
+                <div class="nav-icon">
+                    <div class="image-section">
+                    <img src="assets/account.png" alt="">
+                    </div>
+                    <div class="label">
+                    <h3>Account</h3>
+                    </div>
+                </div></a><br/>
+
+                <a onclick="showContainer()">
+                    <div class="nav-icon">
+                        <div class="image-section">
+                        <img src="assets/dashboard.png" alt="">
+                        </div>
+                        <div class="label">
+                        <h3>Dashboard</h3>
+                        </div>
+                    </div>
+                    </a><br/>
+                
+                
+                <a onclick="openCalendar()">
+                <div class="nav-icon">
+                    <div class="image-section">
+                    <img src="assets/calendar.png" alt="">
+                    </div>
+                    <div class="label">
+                    <h3>Calender</h3>
+                    </div>
+                </div>
+                </a><br/>
+
+                
+            </div>
+            <div class="playBox" id="playBox">
+                <div class="profile">
+                    <img src="assets/account.png" alt="">
+                    <h3 id="name">Name</h3>
+                    <button onclick="logout()">Log out</button>
+                    
+                </div><br/>
+            </div>
+    
+            <div class="center-main">
+
+                <header>
+                    <img id="arrow" src="assets/arrow.png">
+                    <h2 id="Heading">DASHBOARD</h2>
+                </header>
+
+                <div id="container1" class="card-container">
+
+                    <a onclick="showProjects()">
+                        <div class="card-div">
+                            <div class="image-div">
+                                <img src="assets/Projects.jpeg">
+                            </div>
+                            <div class="heading-div">
+                                <h3>Projects</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+
+                    <a>
+                        <div class="card-div">
+                            <div class="image-div">
+                                <img src="assets/Inventory.jpeg">
+                            </div>
+                            <div class="heading-div">
+                                <h3>Inventory</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div id="projects" class="card-container" style="display: none;">
+                    <a onclick="getOpenProjects()">
+                        <div class="card-div">
+                            <div class="image-div">
+                                <img src="assets/Projects.jpeg">
+                            </div>
+                            <div class="heading-div">
+                                <h3>Open Projects</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a onclick="getClosedProjects()">
+                        <div  class="card-div">
+                            <div class="image-div">
+                                <img src="assets/Projects.jpeg">
+                            </div>
+                            <div class="heading-div">
+                                <h3>Closed Projects</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="closedProjects" class="card-container" style="display: none;">
+                    <a>
+                        <div class="card-div">
+                            <div class="image-div">
+                                <img src="assets/Projects.jpeg">
+                            </div>
+                            <div class="heading-div">
+                                <h3>Closed</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="openProjects" class="card-container" style="display: none;">
+                    <a>
+                        <div class="card-div">
+                            <div class="image-div">
+                                <img src="assets/Projects.jpeg">
+                            </div>
+                            <div class="heading-div">
+                                <h3>New Project +</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </main>
+
+    <script src="Dashboard.js" defer></script>
+</body>
+</html>
