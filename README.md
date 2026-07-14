@@ -37,10 +37,6 @@ EngageTrack is designed to simplify engagement management by replacing manual re
 
 1. Clone the repository.
 
-```bash
-git clone https://github.com/yourusername/engagetrack.git
-```
-
 2. Place the project inside your web server directory (e.g., `htdocs` for XAMPP).
 
 3. Import the provided SQL database into MySQL.
